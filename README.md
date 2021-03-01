@@ -15,6 +15,7 @@
 
 
 ## Fichier settings.json
+
 *Fichier crée automatiquement quand le paramètres FormatOnSave est cliqué, rajouté ces lignes de configuration*
 
 ```jsvascript
@@ -31,7 +32,8 @@
 ```
 
 ##Fichier .eslintrc.json
--Modifié au beasoin suf toute les lignes u il y a prettier-
+
+*Modifié au besoin sauf toute les lignes ou il y a prettier*
 
 ```javascript
 {
@@ -52,7 +54,7 @@
 ```
 
 ##Fichier .prettierrc
--modifier au besoin-
+*Modifier au besoin*
 
 ```javascript
 {
