@@ -11,10 +11,10 @@
 
 
 ```javascript
-- npm init
-- npm install -D prettier eslint
-- ./node_modules/eslint/bin/eslint.js --init
-- npm install -D eslint-config-prettier eslint-plugin-prettier
+$npm init
+$npm install -D prettier eslint
+$./node_modules/eslint/bin/eslint.js --init
+$npm install -D eslint-config-prettier eslint-plugin-prettier
 ```
 
 
@@ -39,7 +39,7 @@
 }
 ```
 
-##Fichier .eslintrc.json
+## Fichier .eslintrc.json
 
 *Rajouter ces lignes dans le fichier .eslintrc.json:"
 
@@ -77,7 +77,7 @@
 
 ```
 
-##Fichier .prettierrc
+## Fichier .prettierrc
 
 *Modifier au besoin*
 
