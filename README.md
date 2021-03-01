@@ -1,39 +1,59 @@
 # Config-Prettier-Eslint_MD
 
-##Installer en global ou en devDependencies:
+## Installer les extentions VSCode
 
-- prettier
-- eslint
-- npm install -g install-peerdeps
-- install-peerdeps -g eslint-config-airbnb
-- npm install -g eslint-config-prettier eslint-plugin-prettier
-- Extention VsCode:.
   - Prettier - Code formatter
   - ESLint
   - Prettier ESLint
 
 
+## Installer les modules en devdependencies et les configurer
 
-## Fichier settings.json
 
-*Fichier crée automatiquement quand le paramètres FormatOnSave est cliqué, rajouté ces lignes de configuration*
+```javascript
+- npm init
+- npm install -D prettier eslint
+- ./node_modules/eslint/bin/eslint.js --init
+- npm install -D eslint-config-prettier eslint-plugin-prettier
+```
+
+
+## Modifier settings VSCode et fichier settings.json
+
+- Dans les settings, cocher la case "FormatOnSave" et activer la sauvegarde auto à "OnFocusChange"
+- Un fichier settings.json est créer, copier/coller la config ci-dessous:
+
+
 
 ```jsvascript
 {
-  "liveServer.settings.port": 5501,
+  "editor.tabSize": 2,
   "editor.formatOnSave": true,
   "[javascript]": {
     "editor.formatOnSave":false
   },
   "editor.codeActionsOnSave": {
     "source.fixAll": true
-  }
+  },
+  "files.autoSave": "onFocusChange"
 }
 ```
 
 ##Fichier .eslintrc.json
 
-*Modifié au besoin sauf toute les lignes ou il y a prettier*
+*Rajouter ces lignes dans le fichier .eslintrc.json:"
+
+```javascript
+{
+"extends": ["prettier"]
+"plugins": ["prettier"]
+"rules": {
+"prettier/prettier": "error"
+}
+}
+```
+
+### Exemple
 
 ```javascript
 {
@@ -42,7 +62,10 @@
         "commonjs": true,
         "es2021": true
     },
-    "extends": ["airbnb","airbnb/hooks", "prettier"],
+    "extends": [
+        "airbnb-base",
+         "prettier"
+    ],
     "plugins": ["prettier"],
     "parserOptions": {
         "ecmaVersion": 12
@@ -51,9 +74,11 @@
         "prettier/prettier": "error"
     }
 }
+
 ```
 
 ##Fichier .prettierrc
+
 *Modifier au besoin*
 
 ```javascript
