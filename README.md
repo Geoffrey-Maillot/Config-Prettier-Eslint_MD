@@ -1,4 +1,4 @@
-# Config-Prettier-Eslint_MD
+# RunProjet- ESLint/Prettier_MD
 
 ## Installer les extentions VSCode
 
