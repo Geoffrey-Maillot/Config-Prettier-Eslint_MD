@@ -1,6 +1,6 @@
 # Config-Prettier-Eslint_MD
 
-##Installer en global:
+##Installer en global ou en devDependencies:
 
 - prettier
 - eslint
